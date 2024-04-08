@@ -1,0 +1,148 @@
+/* Cabecera */
+.cabecera__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.cabecera__buscar__item{
+    display: none;
+}
+
+/* Menu */
+
+.menu__container{
+    position: fixed;
+    bottom: 0%;
+    height: 75px;
+    width: 100%;
+}
+
+.menu__lista{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.menu__lista li {
+    align-self: center;
+}
+
+.menu__itens{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.menu__lista:nth-child(2),
+.menu__lista:nth-child(3),
+.menu__lista:nth-child(4){
+    display: none;
+}
+/* Seccion superior */
+.superior__seccion__container{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: scroll;
+    gap: 15px;
+    margin-left: 12%;
+}
+.videos__container{
+    display: flex;
+    margin-left: 11.8%;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.videos__item{
+    height: 330px;
+    width: 280px;
+    flex-grow: 1;
+ 
+}
+.descripcion-video{
+    display: flex;
+    text-align: left; 
+}
+
+/* Rodapie */
+.rodapie__container{
+    display: flex;
+    /* flex-direction: column;
+   flex-wrap: wrap; */
+   flex-flow: column wrap;
+    
+   
+}
+@media (min-width:834px) {
+
+    /* Cabecera */
+    .cabecera__buscar__item{
+        display: block;
+    }
+
+    .menu__container{
+        float: left;
+        width: 70px;
+        height: 100%;
+        flex-direction: column;
+    }
+    .menu__lista{
+        flex-direction: column;
+    }
+
+    /* Rodapie */
+    .rodapie__container{
+        justify-content: space-between;
+    }
+}
+
+    @media (min-width: 1310px){
+
+        .menu__container{
+            width: 239px;
+            overflow: scroll;
+        }   
+
+        .menu__lista:nth-child(2),
+        .menu__lista:nth-child(3),
+        .menu__lista:nth-child(4){
+         display: flex;
+        }
+
+        .menu__lista{
+            height: auto;
+            padding: 20px 17px 20px 15px;
+            gap: 15px;
+        }
+        .menu__lista:nth-child(3){
+            flex-direction: column-reverse;
+        }
+        .premium{
+            order: 1;
+        }
+        .peliculas{
+            order: 2;
+        }
+        .videojuegos{
+            order:3;
+        }
+        
+        .menu__itens{
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+        }
+
+    }
+   
+
+
+
+
+
+
+

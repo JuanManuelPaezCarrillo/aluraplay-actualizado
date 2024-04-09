@@ -61,13 +61,15 @@
     height: 330px;
     width: 280px;
     flex-grow: 1;
- 
 }
 .descripcion-video{
     display: flex;
-    text-align: left; 
+    text-align: left;   
 }
-
+.detalles__video{
+    margin-left: 5px;
+    margin-top: 5px;
+}
 /* Rodapie */
 .rodapie__container{
     display: flex;
